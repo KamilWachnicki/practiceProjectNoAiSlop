@@ -30,7 +30,6 @@ async function read(acceptedName = ' ') {
         console.error(error)
     }
 }
-
 read()
 
 querySelector('#searchInput').addEventListener('keydown', (e) => {
