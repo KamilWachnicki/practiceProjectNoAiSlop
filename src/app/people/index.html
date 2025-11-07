@@ -6,6 +6,7 @@
   <title>Znani Ludzie – Kolbuszowa Notice Board</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <div class="mainWrapper">
@@ -27,26 +28,11 @@
     <div class="dataWrapper">
       <div class="searchContainer">
         <input type="text" id="searchInput" placeholder="Wyszukaj osobę...">
+        <button id="searchButton">Szukaj</button>
       </div>
 
-      <div class="cardsContainer">
-
-        <a href="jan-kowalski.html" class="personCard">
-          <img src="../../images/jan-kowalski.jpg" alt="Jan Kowalski">
-          <div class="personInfo">
-            <h2>Jan Kowalski</h2>
-            <p>Słynny pisarz z Kolbuszowej, znany ze swojej poezji o regionie i historii miasta.</p>
-          </div>
-        </a>
-
-        <a href="anna-nowak.html" class="personCard">
-          <img src="../../images/anna-nowak.jpg" alt="Anna Nowak">
-          <div class="personInfo">
-            <h2>Anna Nowak</h2>
-            <p>Artystka i malarka, której prace prezentowane są w wielu galeriach w Polsce.</p>
-          </div>
-        </a>
-
+      <div class="cardsContainer" id="cardsContainer">
+        <!-- Cards will be inserted here dynamically -->
       </div>
     </div>
   </div>
