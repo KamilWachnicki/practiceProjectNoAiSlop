@@ -9,11 +9,11 @@ async function read() {
         data.forEach(person => {
             const card = document.createElement('a');
             card.className = 'personCard';
-            card.href = `${person.Surname.toLowerCase()}.html`;
+            card.href = `./sub/${person.Name}_${person.Surname}.html`;
 
             card.innerHTML = 
             `
-            <img src="../../images/${person.imageFolder}_medium.jpg" alt="${person.Name} ${person.Surname}">
+            <img src="../../images/${person.imageFolder}/medium.jpg" alt="${person.Name} ${person.Surname}">
             <div class="personInfo">
                 <h2>${person.Name} ${person.Surname}</h2>
                 <h3>${person.Category}</h3>
@@ -27,3 +27,5 @@ async function read() {
         console.error(error)
     }
 }
+
+read()
