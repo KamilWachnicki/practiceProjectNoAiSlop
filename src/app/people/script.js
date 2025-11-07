@@ -11,8 +11,8 @@ async function read() {
             card.className = 'personCard';
             card.href = `./sub/${person.Name}_${person.Surname}.html`;
 
-            card.innerHTML = 
-            `
+            card.innerHTML =
+                `
             <img src="../../images/${person.imageFolder}/medium.jpg" alt="${person.Name} ${person.Surname}">
             <div class="personInfo">
                 <h2>${person.Name} ${person.Surname}</h2>

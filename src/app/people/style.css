@@ -1,14 +1,77 @@
-.dataWrapper {
-  flex-grow: 1;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
   background-color: #F5F7FA;
   color: #2C3E50;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* === Navigation Menu === */
+.navMenu {
+  width: 250px;
+  background: linear-gradient(180deg, #005C97, #363795);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  border-left: 4px solid transparent;
+}
+
+.navButton img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #FFD460;
+  transform: translateX(5px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* === Data Section === */
+.dataWrapper {
+  flex-grow: 1;
+  padding: 60px;
+  background-color: #F5F7FA;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #005C97 #E5E9F0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* === Search Bar === */
@@ -57,13 +120,13 @@
   gap: 20px;
 }
 
-/* === Individual Card === */
+/* === Person Card === */
 .personCard {
   display: flex;
   align-items: flex-start;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   text-decoration: none;
   color: #2C3E50;
@@ -73,7 +136,7 @@
 
 .personCard:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 /* Image */
@@ -110,11 +173,39 @@
   color: #555;
   line-height: 1.5;
   word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 /* === Responsive === */
 @media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .navMenu {
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+  }
+
+  .navButton {
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    font-size: 14px;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .navButton:hover {
+    transform: none;
+    border-bottom: 3px solid #FFD460;
+  }
+
+  .dataWrapper {
+    padding: 30px 20px;
+  }
+
   .personCard {
     flex-direction: column;
     align-items: center;

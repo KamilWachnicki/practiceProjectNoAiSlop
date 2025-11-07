@@ -1,4 +1,4 @@
-/* === General Reset === */
+/* === Reset === */
 * {
   margin: 0;
   padding: 0;
@@ -6,41 +6,29 @@
   font-family: "Poppins", sans-serif;
 }
 
-html{
-    width: 100%;
-    height: 100%;
-}
-
+html,
 body {
+  height: 100%;
   width: 100%;
-  height: 100vh;
   background-color: #F5F7FA;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #2C3E50;
 }
 
 /* === Layout === */
-.mainWrapper {
+body {
   display: flex;
-  width: 95%;
-  height: 95%;
-  max-width: 1200px;
-  background: #fff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
-/* === Navigation Menu === */
+/* === Navigation === */
 .navMenu {
   width: 250px;
   background: linear-gradient(180deg, #005C97, #363795);
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  padding: 20px 0;
   gap: 15px;
+  padding: 20px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .navButton {
@@ -70,15 +58,16 @@ body {
   transform: translateX(5px);
 }
 
-/* === Data Section === */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* === Content === */
 .dataWrapper {
   flex-grow: 1;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #F5F7FA;
-  color: #2C3E50;
+  padding: 60px 60px;
+  overflow-y: auto;
 }
 
 .dataWrapper h1 {
@@ -92,17 +81,17 @@ body {
   line-height: 1.6;
 }
 
-/* === Responsive Design === */
+/* === Responsive === */
 @media (max-width: 768px) {
-  .mainWrapper {
+  body {
     flex-direction: column;
   }
 
   .navMenu {
     flex-direction: row;
-    justify-content: space-around;
     width: 100%;
     height: 70px;
+    justify-content: space-around;
   }
 
   .navButton {
@@ -118,9 +107,8 @@ body {
     transform: none;
     border-bottom: 3px solid #FFD460;
   }
-}
 
-a{
-  color: white;
-  text-decoration: none;
+  .dataWrapper {
+    padding: 30px 20px;
+  }
 }

@@ -1,56 +1,34 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kolbuszowa Notice Board</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/src/app/style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <div class="mainWrapper">
-    <nav class="navMenu">
-      <button class="navButton homeButton" title="Strona główna">
-        <img src="../../icons/home.svg" alt="home icon">
-        <a href="../index.html">Strona Główna</a>
-      </button>
-      <button class="navButton famousPeopleButton" title="Znani ludzie">
-        <img src="../../icons/people.svg" alt="people icon">
-        <a href="../people/index.html">Znani Ludzie</a>
-      </button>
-      <button class="navButton eventsButton" title="Wydarzenia">
-        <img src="../../icons/events.svg" alt="events icon">
-        <a href="../events/index.html">Wydarzenia</a>
-      </button>
-    </nav>
+  <nav class="navMenu">
+    <button class="navButton homeButton" title="Strona główna">
+      <img src="/src/icons/home.svg" alt="home icon">
+      <a href="/src/app/index.html">Strona Główna</a>
+    </button>
+    <button class="navButton famousPeopleButton" title="Znani ludzie">
+      <img src="/src/icons/people.svg" alt="people icon">
+      <a href="/src/app/people/index.html">Znani Ludzie</a>
+    </button>
+    <button class="navButton eventsButton" title="Wydarzenia">
+      <img src="/src/icons/events.svg" alt="events icon">
+      <a href="/src/app/events/index.html">Wydarzenia</a>
+    </button>
+  </nav>
 
-    <div id="dataWrapper"></div>
-  </div>
-
-  <script>
-    async function AppendEvents() {
-      try {
-        const response = await fetch("../../data/events.json");
-        const data = await response.json();
-
-        const wrapper = document.getElementById("dataWrapper");
-        wrapper.innerHTML = "";
-
-        data.forEach(e => {
-          const title = document.createElement("h3");
-          title.textContent = e.name;
-
-          const para = document.createElement("p");
-          para.textContent = e.description;
-
-          wrapper.appendChild(title);f
-          wrapper.appendChild(para);
-        });
-      } catch (err) {
-        console.error("Error loading events:", err);
-      }
-    }
-    AppendEvents();
-  </script>
+  <main class="dataWrapper">
+    <h1>Witamy na tablicy ogłoszeń Kolbuszowej!</h1>
+    <p>Wybierz sekcję z menu po lewej, aby zobaczyć więcej informacji.</p>
+  </main>
 </body>
+
 </html>
