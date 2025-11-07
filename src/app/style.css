@@ -1,0 +1,126 @@
+/* === General Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #F5F7FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Layout === */
+.mainWrapper {
+  display: flex;
+  width: 95%;
+  height: 95%;
+  max-width: 1200px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* === Navigation Menu === */
+.navMenu {
+  width: 250px;
+  background: linear-gradient(180deg, #005C97, #363795);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 20px 0;
+  gap: 15px;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  border-left: 4px solid transparent;
+}
+
+.navButton img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #FFD460;
+  transform: translateX(5px);
+}
+
+/* === Data Section === */
+.dataWrapper {
+  flex-grow: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F5F7FA;
+  color: #2C3E50;
+}
+
+.dataWrapper h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #005C97;
+}
+
+.dataWrapper p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .mainWrapper {
+    flex-direction: column;
+  }
+
+  .navMenu {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+  }
+
+  .navButton {
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    font-size: 14px;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .navButton:hover {
+    transform: none;
+    border-bottom: 3px solid #FFD460;
+  }
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
