@@ -1,29 +1,57 @@
 [
-    {
-        "Name": "Albert",
-        "Surname": "Einstein",
-        "Category": "Physicist",
-        "Description": "German-born theoretical physicist best known for developing the theory of relativity and the equation E=mc². He received the Nobel Prize in Physics in 1921 for his explanation of the photoelectric effect.",
-        "imagePath": "../images/albert_einstein.jpg",
-        "location": "Ulm, Kingdom of Württemberg, German Empire"
-    },
-    {
-        "Name": "Marie",
-        "Surname": "Curie",
-        "Category": "Physicist and Chemist",
-        "Description": "Polish-born scientist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize and remains the only person to win Nobel Prizes in two different sciences — Physics and Chemistry.",
-        "imagePath": "../images/marie_curie.jpg",
-        "location": "Warsaw, Congress Poland, Russian Empire"
-    },
-    {
-        "Name": "J. Robert",
-        "Surname": "Oppenheimer",
-        "Category": "Physicist",
-        "Description": "American theoretical physicist known as the 'father of the atomic bomb' for his role as scientific director of the Manhattan Project during World War II. Later advocated for international control of nuclear power.",
-        "imagePath": "images/j_robert_oppenheimer.jpg",
-        "location": {
-            "x" : 0,
-            "y" : 0
-        }
+  {
+    "Name": "J. Robert",
+    "Surname": "Oppenheimer",
+    "Category": "Physicist",
+    "Description": "Julius Robert Oppenheimer (born April 22, 1904, New York City, USA – died February 18, 1967, Princeton, New Jersey) was an American theoretical physicist best known as the scientific director of the Manhattan Project, where he oversaw the development of the first nuclear weapons during World War II. Educated at Harvard, Cambridge, and Göttingen, Oppenheimer made key contributions to quantum mechanics and astrophysics. After the war, he became a vocal advocate for the peaceful use of atomic energy and the international control of nuclear weapons. He later served as the director of the Institute for Advanced Study in Princeton.",
+    "imageFolder": "oppenheimer",
+    "location": {
+      "x": 0,
+      "y": 0
     }
+  },
+  {
+    "Name": "Albert",
+    "Surname": "Einstein",
+    "Category": "Physicist",
+    "Description": "Albert Einstein (born March 14, 1879, Ulm, Germany – died April 18, 1955, Princeton, New Jersey, USA) was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His equation E=mc² is among the most famous in science. Einstein received the 1921 Nobel Prize in Physics for his explanation of the photoelectric effect, a pivotal step in quantum theory. After emigrating to the United States in 1933 to escape Nazi Germany, he worked at the Institute for Advanced Study in Princeton and became a prominent advocate for civil rights and pacifism.",
+    "imageFolder": "einstein",
+    "location": {
+      "x": 1,
+      "y": 0
+    }
+  },
+  {
+    "Name": "Marie",
+    "Surname": "Curie",
+    "Category": "Chemist and Physicist",
+    "Description": "Marie Skłodowska Curie (born November 7, 1867, Warsaw, Poland – died July 4, 1934, Passy, France) was a pioneering scientist who conducted groundbreaking research on radioactivity. She was the first woman to win a Nobel Prize and the only person to win in two scientific fields—Physics and Chemistry. Curie, along with her husband Pierre, discovered the elements polonium and radium. Her work laid the foundation for modern nuclear physics and radiotherapy. Despite facing discrimination in academia, she founded the Radium Institute in Paris, where she trained future generations of scientists.",
+    "imageFolder": "curie",
+    "location": {
+      "x": 2,
+      "y": 0
+    }
+  },
+  {
+    "Name": "Nikola",
+    "Surname": "Tesla",
+    "Category": "Inventor and Electrical Engineer",
+    "Description": "Nikola Tesla (born July 10, 1856, Smiljan, Austrian Empire – died January 7, 1943, New York City, USA) was a Serbian-American inventor, electrical engineer, and futurist best known for developing alternating current (AC) electrical systems. Tesla’s inventions and ideas transformed the modern world, contributing to the creation of wireless communication, radio, and the electric motor. Though he died in relative obscurity, his work became the foundation for modern electrical engineering and earned him posthumous recognition as one of history’s greatest inventors.",
+    "imageFolder": "tesla",
+    "location": {
+      "x": 3,
+      "y": 0
+    }
+  },
+  {
+    "Name": "Isaac",
+    "Surname": "Newton",
+    "Category": "Mathematician and Physicist",
+    "Description": "Sir Isaac Newton (born January 4, 1643, Woolsthorpe, England – died March 31, 1727, London, England) was an English mathematician, physicist, and astronomer who formulated the laws of motion and universal gravitation. His 1687 work, 'Philosophiæ Naturalis Principia Mathematica', laid the foundation for classical mechanics. Newton also made major contributions to optics, developing a theory of color and the reflecting telescope. As a mathematician, he co-developed calculus independently of Leibniz. Newton’s discoveries defined the scientific revolution and remained dominant until the advent of Einstein’s theories of relativity.",
+    "imageFolder": "newton",
+    "location": {
+      "x": 4,
+      "y": 0
+    }
+  }
 ]
