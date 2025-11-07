@@ -24,10 +24,33 @@
       </button>
     </nav>
 
-    <div class="dataWrapper">
-      <h1>Witamy na tablicy ogłoszeń Kolbuszowej!</h1>
-      <p>Wybierz sekcję z menu po lewej, aby zobaczyć więcej informacji.</p>
-    </div>
+    <div id="dataWrapper"></div>
   </div>
+
+  <script>
+    async function AppendEvents() {
+      try {
+        const response = await fetch("../../data/events.json");
+        const data = await response.json();
+
+        const wrapper = document.getElementById("dataWrapper");
+        wrapper.innerHTML = "";
+
+        data.forEach(e => {
+          const title = document.createElement("h3");
+          title.textContent = e.name;
+
+          const para = document.createElement("p");
+          para.textContent = e.description;
+
+          wrapper.appendChild(title);
+          wrapper.appendChild(para);
+        });
+      } catch (err) {
+        console.error("Error loading events:", err);
+      }
+    }
+    AppendEvents();
+  </script>
 </body>
 </html>
