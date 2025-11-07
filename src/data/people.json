@@ -4,54 +4,34 @@
     "Surname": "Oppenheimer",
     "Category": "Physicist",
     "Description": "American physicist known as the 'father of the atomic bomb' for leading the Manhattan Project. He later directed the Institute for Advanced Study and advocated for peaceful nuclear use.",
-    "imageFolder": "Robert_Oppenheimer",
-    "location": {
-      "x": 0,
-      "y": 0
-    }
+    "imageFolder": "Robert_Oppenheimer"
   },
   {
     "Name": "Albert",
     "Surname": "Einstein",
     "Category": "Physicist",
     "Description": "German-born theoretical physicist who developed the theory of relativity and explained the photoelectric effect. Nobel laureate and advocate for peace and civil rights.",
-    "imageFolder": "Albert_Einstein",
-    "location": {
-      "x": 1,
-      "y": 0
-    }
+    "imageFolder": "Albert_Einstein"
   },
   {
     "Name": "Marie",
     "Surname": "Curie",
     "Category": "Chemist and Physicist",
     "Description": "Polish-born scientist who discovered polonium and radium. First person to win Nobel Prizes in two sciences and pioneer of research on radioactivity.",
-    "imageFolder": "Marie_Curie",
-    "location": {
-      "x": 2,
-      "y": 0
-    }
+    "imageFolder": "Marie_Curie"
   },
   {
     "Name": "Nikola",
     "Surname": "Tesla",
     "Category": "Inventor and Electrical Engineer",
     "Description": "Serbian-American inventor and engineer who developed alternating current systems and contributed to wireless communication and electric motors.",
-    "imageFolder": "Nikola_Tesla",
-    "location": {
-      "x": 3,
-      "y": 0
-    }
+    "imageFolder": "Nikola_Tesla"
   },
   {
     "Name": "Isaac",
     "Surname": "Newton",
     "Category": "Mathematician and Physicist",
     "Description": "English scientist who formulated the laws of motion and gravity, co-developed calculus, and revolutionized physics and mathematics.",
-    "imageFolder": "Issac_Newton",
-    "location": {
-      "x": 4,
-      "y": 0
-    }
+    "imageFolder": "Isaac_Newton"
   }
 ]
