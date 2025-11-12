@@ -4,7 +4,7 @@ const createElement = document.createElement.bind(document)
 async function read(acceptedName = ' ') {
     const container = querySelector('#cardsContainer');
     try {
-        const res = await fetch("/src/data/event.json")
+        const res = await fetch("/src/data/events.json")
         const data = await res.json()
         data.forEach(e => {
             if (acceptedName !== ' ' && !(`${e.name}`.toLowerCase().includes(acceptedName.toLowerCase()))) {
@@ -16,9 +16,9 @@ async function read(acceptedName = ' ') {
 
             card.innerHTML =
             `
-            <img src="/src/images/${e.id}/medium.jpg" alt="${e.name}">
+            <img src="/src/images/events/${e.id}/medium.jpg" alt="${e.name}">
             <div class="eventInfo">
-                <h2>${e.name}</h2>
+                <h2>${e.name} ${e.start_date} - ${e.end_date}</h2>
                 <h3>${e.location}</h3>
                 <p>${e.description}</p>
             </div>
