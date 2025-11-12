@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Puławy Music Festival – Wydarzenia</title>
+  <title>{EVENT NAME} – Wydarzenia</title>
+  <link rel="stylesheet" href="/src/app/people/style.css">
   <link rel="stylesheet" href="/src/app/events/style.css">
-  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <nav class="navMenu">
     <button class="navButton homeButton" title="Strona główna">
@@ -23,30 +21,31 @@
       <img src="/src/icons/events.svg" alt="events icon">
       <a href="/src/app/events/index.html">Wydarzenia</a>
     </button>
-    <button class="navButton qrTemplateButton" title="Qr Template">
+    <button class="navButton templateButton" title="Qr Template">
       <img src="/src/icons/qrCode.svg" alt="qr code icon">
       <a href="/src/app/templateGenerator/index.html">Qr Template</a>
     </button>
   </nav>
 
   <main class="dataWrapper">
-    <section class="eventProfile">
-      <div class="eventInfo">
-        <h1>Puławy Music Festival – “All Corners of the World”</h1>
-        <h2>6–11 listopada 2025 · Puławy, Polska</h2>
-        <p>
-          Festiwal muzyczny prezentujący różnorodne gatunki i niekonwencjonalne połączenia artystyczne. 
-          Wydarzenie łączy kulturę i muzykę z różnych stron świata, promując otwartość i kreatywność.
-        </p>
-      </div>
-    </section>
+<section class="eventProfile">
+  <img src="/src/images/events/5.jpg" alt="Puławy Music Festival">
+  <div class="eventInfo">
+    <h1>Puławy Music Festival – “All Corners of the World”</h1>
+    <h2>6–11 listopada 2025 · Puławy, Polska</h2>
+    <p>
+      Festiwal Muzyczny w Puławach to wyjątkowe wydarzenie celebrujące różnorodność kultur i gatunków muzycznych. Edycja 2025 pod hasłem <b>„All Corners of the World”</b> przeniesie słuchaczy w muzyczną podróż przez kontynenty – od rytmów Afryki, przez dźwięki Bliskiego Wschodu, aż po współczesną muzykę europejską i jazz.
+      <br><br>
+      W ciągu sześciu dni odbędą się koncerty, warsztaty, spotkania z artystami oraz wystawy multimedialne. Festiwal łączy klasykę z nowoczesnością, prezentując artystów o otwartych horyzontach i pasji tworzenia. Puławy staną się miejscem, gdzie muzyka przekracza granice, łącząc ludzi w uniwersalnym języku dźwięków.
+      <br><br>
+      Wydarzenie wspierane jest przez lokalne instytucje kultury i międzynarodowych partnerów, tworząc przestrzeń dialogu międzykulturowego.
+    </p>
+  </div>
+</section>
 
-    <div class="mapContainer">
-      <iframe
-        src="https://www.openstreetmap.org/export/embed.html?bbox=21.95%2C51.40%2C22.00%2C51.42&amp;layer=mapnik&amp;marker=51.41%2C21.97"
-        allowfullscreen loading="lazy">
-      </iframe>
-    </div>
+<div class="mapContainer">
+  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=21.95%2C51.40%2C22.00%2C51.42&layer=mapnik&marker=51.41%2C21.97" allowfullscreen loading="lazy"></iframe>
+</div>
   </main>
 </body>
 </html>
