@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kolbuszowa Notice Board</title>
   <link rel="stylesheet" href="/src/app/style.css">
+  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 
@@ -30,8 +31,13 @@
   </nav>
 
   <main class="dataWrapper">
-    <h1>Witamy na tablicy ogłoszeń Kolbuszowej!</h1>
-    <p>Wybierz sekcję z menu po lewej, aby zobaczyć więcej informacji.</p>
+    <div class="searchContainer">
+      <input type="text" id="searchInput" placeholder="Wyszukaj event...">
+    </div>
+
+    <div class="cardsContainer" id="cardsContainer">
+      <!-- Cards loaded dynamically -->
+    </div>
   </main>
 </body>
 

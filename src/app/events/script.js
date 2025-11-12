@@ -1,23 +1,41 @@
-async function AppendEvents() {
+const querySelector = document.querySelector.bind(document)
+const createElement = document.createElement.bind(document)
+
+async function read(acceptedName = ' ') {
+    const container = querySelector('#cardsContainer');
     try {
-        const response = await fetch("../../data/events.json");
-        const data = await response.json();
-
-        const wrapper = document.getElementById("dataWrapper");
-        wrapper.innerHTML = "";
-
+        const res = await fetch("/src/data/event.json")
+        const data = await res.json()
         data.forEach(e => {
-            const title = document.createElement("h3");
-            title.textContent = e.name;
+            if (acceptedName !== ' ' && !(`${e.Name} ${e.Surname}`.toLowerCase().includes(acceptedName.toLowerCase()))) {
+                return;
+            }
+            const card = createElement('a');
+            card.className = 'eventCard';
+            card.href = `./sub/${e.id}.html`;
 
-            const para = document.createElement("p");
-            para.textContent = e.description;
-
-            wrapper.appendChild(title); f
-            wrapper.appendChild(para);
-        });
-    } catch (err) {
-        console.error("Error loading events:", err);
+            card.innerHTML =
+            `
+            <img src="/src/images/${e.id}/medium.jpg" alt="${e.name}">
+            <div class="personInfo">
+                <h2>${e.name}</h2>
+                <h3>${e.location}</h3>
+                <p>${e.description}</p>
+            </div>
+            `
+            container.appendChild(card)
+        })
+    }
+    catch (error) {
+        console.error(error)
     }
 }
-AppendEvents();
+read()
+
+querySelector('#searchInput').addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter')
+        return;
+    const container = querySelector('#cardsContainer');
+    container.innerHTML = '';
+    read(e.target.value.trim());
+});
