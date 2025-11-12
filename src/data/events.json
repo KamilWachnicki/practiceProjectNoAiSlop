@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "NG Poland, JS Poland & AI Poland",
     "start_date": "2025-11-17",
     "end_date": "2025-11-20",
@@ -7,6 +8,7 @@
     "description": "Conferences for Angular (NG), JavaScript (JS) and Artificial Intelligence (AI) bringing together developers and industry experts. Workshops on Nov 17, NG on Nov 18, JS on Nov 19, AI on Nov 20."
   },
   {
+    "id": 2,
     "name": "EnergaCAMERIMAGE 2025 (33rd International Film Festival of the Art of Cinematography)",
     "start_date": "2025-11-15",
     "end_date": "2025-11-22",
@@ -14,6 +16,7 @@
     "description": "Film festival recognizing cinematography in film, television and music videos."
   },
   {
+    "id": 3,
     "name": "2025 CS Warsaw Cup (ISU Challenger Series Figure Skating)",
     "start_date": "2025-11-19",
     "end_date": "2025-11-23",
@@ -21,6 +24,7 @@
     "description": "International figure skating competition, part of the ISU Challenger Series, with men’s singles, women’s singles and ice dance."
   },
   {
+    "id": 4,
     "name": "ASI Poland Convention 2025",
     "start_date": "2025-11-21",
     "end_date": "2025-11-23",
@@ -28,6 +32,7 @@
     "description": "Convention organised by ASI Poland; details on sessions to be confirmed."
   },
   {
+    "id": 5,
     "name": "Puławy Music Festival – “All Corners of the World”",
     "start_date": "2025-11-06",
     "end_date": "2025-11-11",
