@@ -9,3 +9,5 @@ new QRCode(document.getElementById("qrcode"), {
     width: 160,
     height: 160
 });
+
+window.print()
