@@ -19,6 +19,11 @@ body {
   min-height: 100vh;
 }
 
+iframe {
+  width: 100%;
+  height: 500px;        /* Adjust this for your desired map height */
+  border: none;
+}
 /* === Navigation Menu === */
 .navMenu {
   width: 250px;
