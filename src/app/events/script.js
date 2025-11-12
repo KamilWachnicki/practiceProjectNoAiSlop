@@ -7,7 +7,7 @@ async function read(acceptedName = ' ') {
         const res = await fetch("/src/data/event.json")
         const data = await res.json()
         data.forEach(e => {
-            if (acceptedName !== ' ' && !(`${e.Name} ${e.Surname}`.toLowerCase().includes(acceptedName.toLowerCase()))) {
+            if (acceptedName !== ' ' && !(`${e.name}`.toLowerCase().includes(acceptedName.toLowerCase()))) {
                 return;
             }
             const card = createElement('a');
@@ -17,7 +17,7 @@ async function read(acceptedName = ' ') {
             card.innerHTML =
             `
             <img src="/src/images/${e.id}/medium.jpg" alt="${e.name}">
-            <div class="personInfo">
+            <div class="eventInfo">
                 <h2>${e.name}</h2>
                 <h3>${e.location}</h3>
                 <p>${e.description}</p>

@@ -120,8 +120,8 @@ a {
   gap: 20px;
 }
 
-/* === Person Card === */
-.personCard {
+/* === Event Card === */
+.eventCard {
   display: flex;
   align-items: flex-start;
   background-color: #fff;
@@ -134,7 +134,7 @@ a {
   width: 100%;
 }
 
-.personCard:hover {
+.eventCard:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
@@ -148,7 +148,7 @@ a {
 }
 
 /* Info */
-.personInfo {
+.eventInfo {
   padding: 20px;
   flex: 1;
   display: flex;
@@ -156,19 +156,19 @@ a {
   justify-content: center;
 }
 
-.personInfo h2 {
+.eventInfo h2 {
   font-size: 1.4rem;
   color: #005C97;
   margin-bottom: 6px;
 }
 
-.personInfo h3 {
+.eventInfo h3 {
   font-size: 1.1rem;
   color: #363795;
   margin-bottom: 10px;
 }
 
-.personInfo p {
+.eventInfo p {
   font-size: 1rem;
   color: #555;
   line-height: 1.5;
@@ -206,20 +206,20 @@ a {
     padding: 30px 20px;
   }
 
-  .personCard {
+  .eventCard {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .personCard img {
+  .eventCard img {
     width: 100%;
     height: 200px;
     border-right: none;
     border-bottom: 1px solid #eee;
   }
 
-  .personInfo {
+  .eventInfo {
     padding: 15px;
   }
 
