@@ -1,42 +1,51 @@
 const querySelector = document.querySelector.bind(document)
 const createElement = document.createElement.bind(document)
 
-async function read(acceptedName = ' ') {
-    const container = querySelector('#cardsContainer');
-    try {
-        const res = await fetch("/src/data/people.json")
-        const data = await res.json()
-        console.log("tried")
-        data.forEach(person => {
-            if (acceptedName !== ' ' && !(`${person.Name} ${person.Surname}`.toLowerCase().includes(acceptedName.toLowerCase()))) {
-                return;
-            }
-            const card = createElement('a');
-            card.className = 'personCard';
-            card.href = `./sub/${person.Name}_${person.Surname}.html`.replaceAll(' ', '_');
+const category_json = {
+    "events": "events.json",
+    "people": "people.json"
+}
 
-            card.innerHTML =
-                `
-            <img src="/src/images/people/${person.imageFolder}/medium.jpg" alt="${person.Name} ${person.Surname}">
-            <div class="personInfo">
-                <h2>${person.Name} ${person.Surname}</h2>
-                <h3>${person.Category}</h3>
-                <p>${person.Description}</p>
-            </div>
-            `
-            container.appendChild(card)
-        })
+const selected = ""
+
+async function read(category, acceptedText = ' ') {
+    const container = querySelector("#templatesList")
+    container.innerHTML = ""
+    try {
+        const json_file = `/src/data/${category_json[category]}`
+        const res = await fetch(json_file)
+        const data = await res.json()
+        console.log(data)
+        data.forEach(element => {
+            const name = element.Name || element.name || "Not found"
+            const surname = element.Surname || ""
+            const button = createElement("button")
+            button.className = "nameCard"
+            button.innerHTML = `<h2>${name}${surname}</h2>`
+            container.appendChild(button)
+        });
     }
     catch (error) {
         console.error(error)
     }
 }
-read()
 
-querySelector('#searchInput').addEventListener('keydown', (e) => {
-    if (e.key !== 'Enter')
-        return;
-    const container = querySelector('#cardsContainer');
-    container.innerHTML = '';
-    read(e.target.value.trim());
+querySelector('#categorySelect').addEventListener('change', (e) => {
+    const container = querySelector('#templatesList')
+    container.innerHTML = ''
+    console.log(e.target.value)
+    read(e.target.value)
 });
+
+
+querySelector("#templateSearchButton").addEventListener("click", () => {
+    const text = querySelector("#templateSearchInput").value.trim()
+    if(text == ""){
+        return
+    }
+    const category = querySelector("#categorySelect").value
+    if(category == ""){
+        return
+    }
+    read(category, text)
+})
