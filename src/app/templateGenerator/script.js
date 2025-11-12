@@ -6,6 +6,7 @@ async function read(acceptedName = ' ') {
     try {
         const res = await fetch("/src/data/people.json")
         const data = await res.json()
+        console.log("tried")
         data.forEach(person => {
             if (acceptedName !== ' ' && !(`${person.Name} ${person.Surname}`.toLowerCase().includes(acceptedName.toLowerCase()))) {
                 return;

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qr Template - Kolbuszowa Notice Board</title>
+  <link rel="stylesheet" href="/src/app/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navMenu">
+    <button class="navButton homeButton" title="Strona główna">
+      <img src="/src/icons/home.svg" alt="home icon">
+      <a href="/src/app/index.html">Strona Główna</a>
+    </button>
+    <button class="navButton famousPeopleButton" title="Znani ludzie">
+      <img src="/src/icons/people.svg" alt="people icon">
+      <a href="/src/app/people/index.html">Znani Ludzie</a>
+    </button>
+    <button class="navButton eventsButton" title="Wydarzenia">
+      <img src="/src/icons/events.svg" alt="events icon">
+      <a href="/src/app/events/index.html">Wydarzenia</a>
+    </button>
+    <button class="navButton qrTemplateButton" title="Qr Template">
+      <img src="/src/icons/qrCode.svg" alt="qr code icon">
+      <a href="/src/app/templateGenerator/index.html">Qr Template</a>
+    </button>
+  </nav>
+
+  <main class="dataWrapper">
+    <div class="selectCategory">
+      <label for="categorySelect">Wybierz kategorię:</label>
+      <select id="categorySelect">
+        <option value="" selected>-- wybierz --</option>
+        <option value="event">Wydarzenia</option>
+        <option value="person">Osoby</option>
+      </select>
+    </div>
+
+    <div class="searchContainer">
+      <input type="text" id="templateSearchInput" placeholder="Wyszukaj szablon...">
+      <button id="templateSearchButton">Szukaj</button>
+    </div>
+
+    <div class="templateFrame">
+      <!-- Fixed-size scrollable frame -->
+      <div class="templatesList" id="templatesList">
+        <!-- dynamically populated list of template thumbnails or items -->
+      </div>
+    </div>
+
+    <div class="generateButtonContainer">
+      <button id="generateTemplateButton">Generuj szablon</button>
+    </div>
+  </main>
+</body>
+</html>
