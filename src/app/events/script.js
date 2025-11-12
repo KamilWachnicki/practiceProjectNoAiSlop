@@ -16,9 +16,9 @@ async function read(acceptedName = ' ') {
 
             card.innerHTML =
             `
-            <img src="/src/images/events/${e.id}/medium.jpg" alt="${e.name}">
+            <img src="/src/images/events/${e.id}.jpg" alt="${e.name}">
             <div class="eventInfo">
-                <h2>${e.name} ${e.start_date} - ${e.end_date}</h2>
+                <h2>${e.name} ${e.start_date}/${e.end_date}</h2>
                 <h3>${e.location}</h3>
                 <p>${e.description}</p>
             </div>

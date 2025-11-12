@@ -15,8 +15,8 @@ async function read(acceptedName = ' ') {
             card.href = `./sub/${person.Name}_${person.Surname}.html`.replaceAll(' ', '_');
 
             card.innerHTML =
-                `
-            <img src="/src/images/people/${person.imageFolder}/medium.jpg" alt="${person.Name} ${person.Surname}">
+            `
+            <img src="/src/images/people/${person.imageFolder}.jpg" alt="${person.Name} ${person.Surname}">
             <div class="personInfo">
                 <h2>${person.Name} ${person.Surname}</h2>
                 <h3>${person.Category}</h3>
