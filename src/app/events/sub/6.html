@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puławy Music Festival – Wydarzenia</title>
+  <link rel="stylesheet" href="/src/app/events/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navMenu">
+    <button class="navButton homeButton" title="Strona główna">
+      <img src="/src/icons/home.svg" alt="home icon">
+      <a href="/src/app/index.html">Strona Główna</a>
+    </button>
+    <button class="navButton famousPeopleButton" title="Znani ludzie">
+      <img src="/src/icons/people.svg" alt="people icon">
+      <a href="/src/app/people/index.html">Znani Ludzie</a>
+    </button>
+    <button class="navButton eventsButton" title="Wydarzenia">
+      <img src="/src/icons/events.svg" alt="events icon">
+      <a href="/src/app/events/index.html">Wydarzenia</a>
+    </button>
+    <button class="navButton qrTemplateButton" title="Qr Template">
+      <img src="/src/icons/qrCode.svg" alt="qr code icon">
+      <a href="/src/app/templateGenerator/index.html">Qr Template</a>
+    </button>
+  </nav>
+
+  <main class="dataWrapper">
+    <section class="eventProfile">
+      <div class="eventInfo">
+        <h1>Puławy Music Festival – “All Corners of the World”</h1>
+        <h2>6–11 listopada 2025 · Puławy, Polska</h2>
+        <p>
+          Festiwal muzyczny prezentujący różnorodne gatunki i niekonwencjonalne połączenia artystyczne. 
+          Wydarzenie łączy kulturę i muzykę z różnych stron świata, promując otwartość i kreatywność.
+        </p>
+      </div>
+    </section>
+
+    <div class="mapContainer">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=21.95%2C51.40%2C22.00%2C51.42&amp;layer=mapnik&amp;marker=51.41%2C21.97"
+        allowfullscreen loading="lazy">
+      </iframe>
+    </div>
+  </main>
+</body>
+</html>
