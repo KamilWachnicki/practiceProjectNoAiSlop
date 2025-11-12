@@ -1,0 +1,137 @@
+/* Style specific to template generator page */
+
+.selectCategory {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.selectCategory label {
+  font-size: 1.1rem;
+  color: #005C97;
+}
+
+.selectCategory select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.templateFrame {
+  width: 100%;
+  height: 600px; /* fixed height */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow-y: auto;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.templatesList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.generateButtonContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#generateTemplateButton {
+  background-color: #005C97;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#generateTemplateButton:hover {
+  background-color: #00497a;
+}
+
+/* Style search button similarly to people page */
+#templateSearchButton {
+  background-color: #005C97;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#templateSearchButton:hover {
+  background-color: #00497a;
+}
+
+#templateSearchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+  color: #2C3E50;
+}
+
+#templateSearchInput:focus {
+  border-color: #005C97;
+  box-shadow: 0 0 0 3px rgba(0, 92, 151, 0.2);
+}
+
+.templateCard {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  color: #2C3E50;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  cursor: pointer;
+}
+
+.templateCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.templateCard img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-right: 1px solid #eee;
+}
+
+.templateCardInfo {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.templateCardInfo h2 {
+  font-size: 1.4rem;
+  color: #005C97;
+  margin-bottom: 6px;
+}
+
+.templateCardInfo p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}

@@ -4,8 +4,9 @@ const createElement = document.createElement.bind(document)
 async function read(acceptedName = ' ') {
     const container = querySelector('#cardsContainer');
     try {
-        const res = await fetch("../../data/people.json")
+        const res = await fetch("/src/data/people.json")
         const data = await res.json()
+        console.log("tried")
         data.forEach(person => {
             if (acceptedName !== ' ' && !(`${person.Name} ${person.Surname}`.toLowerCase().includes(acceptedName.toLowerCase()))) {
                 return;
