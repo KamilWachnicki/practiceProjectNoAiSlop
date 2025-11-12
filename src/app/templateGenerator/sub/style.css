@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.plaque {
+    background: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#qrcode {
+    margin-left: 20px;
+}

@@ -13,7 +13,7 @@ async function read(acceptedName = ' ') {
             const card = createElement('a');
             card.className = 'personCard';
             card.href = `./sub/${person.Name}_${person.Surname}.html`.replaceAll(' ', '_');
-
+' ', '_'
             card.innerHTML =
             `
             <img src="/src/images/people/${person.imageFolder}.jpg" alt="${person.Name} ${person.Surname}">
