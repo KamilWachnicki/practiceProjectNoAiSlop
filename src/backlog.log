@@ -1,7 +1,7 @@
 === BACKLOG: Projekt QR + Wydarzenia ===
 
 1 STRUKTURA
-- Utworzyć 10 podstron dla wydarzeń:
+- Utworzyć 5 podstron dla wydarzeń:
   /wydarzenie1.html
   /wydarzenie2.html
   ...
@@ -11,7 +11,6 @@
     • Krótki opis
     • Datę i miejsce
     • Przycisk "Zobacz na mapie"
-    • Kod QR prowadzący do tej podstrony
 
 2 GŁÓWNA STRONA (index.html)
 - Wyświetla listę wydarzeń z miniaturami i przyciskiem „Pokaż QR”.
@@ -24,11 +23,8 @@
   • Wyszukiwanie po części tekstu (case-insensitive).
   • Podświetlanie wyników dopasowania.
   • Pokazywanie komunikatu „Brak wyników” przy pustym filtrze.
-- Dodać animację fade-in/fade-out przy pojawianiu się karty QR.
 
 4 MAPA (Leaflet)
-- Ukrywa się po kliknięciu w przycisk „Pokaż QR”.
-- Po zamknięciu karty QR mapa wraca na ekran.
 - Na mapie dodać markery wydarzeń (z nazwą i linkiem).
 
 
