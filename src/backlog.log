@@ -1,31 +1,44 @@
-=== BACKLOG: Projekt QR + Wydarzenia ===
+=== BACKLOG ===
 
-1 STRUKTURA
-- Utworzyć 5 podstron dla wydarzeń:
-  /wydarzenie1.html
-  /wydarzenie2.html
-  ...
-  /wydarzenie10.html
-  Każda strona ma:
-    • Tytuł wydarzenia
-    • Krótki opis
-    • Datę i miejsce
-    • Przycisk "Zobacz na mapie"
+1 STRONA GŁÓWNA
 
-2 GŁÓWNA STRONA (index.html)
-- Wyświetla listę wydarzeń z miniaturami i przyciskiem „Pokaż QR”.
-- Dodaj pasek wyszukiwania, który filtruje po nazwie wydarzenia.
-- Po kliknięciu w wydarzenie pokazuje kartę z QR (zamiast mapy).
+Dodano główną stronę z nawigacją do osób, wydarzeń oraz generatora QR.
 
-3 TEMPLATE QR (naprawa i rozwinięcie)
-- Naprawić błąd z niedziałającym wyszukiwaniem — aktualnie search input nie filtruje dynamicznie.
-- Ulepszyć:
-  • Wyszukiwanie po części tekstu (case-insensitive).
-  • Podświetlanie wyników dopasowania.
-  • Pokazywanie komunikatu „Brak wyników” przy pustym filtrze.
+2 PODSTRONA „POPULARNE OSOBY”
 
-4 MAPA (Leaflet)
-- Na mapie dodać markery wydarzeń (z nazwą i linkiem).
+Dodano listę osób z działającą wyszukiwarką.
 
+Kliknięcie w osobę otwiera jej dedykowaną stronę.
 
-=== KONIEC BACKLOGU ===
+Każda strona osoby zawiera:
+• zdjęcie
+• opis / historię
+• mapę z oznaczoną ławką dedykowaną tej osobie
+
+3 PODSTRONA „WYDARZENIA”
+
+Dodano listę wydarzeń.
+
+Każde wydarzenie zawiera:
+• miejsce
+• godzinę
+• opis aktywności
+• mapę z dokładną lokalizacją wydarzenia
+
+4 GENERATOR QR TEMPLATE
+
+Dodano podstronę generatora.
+
+Można wybrać kategorię z listy.
+
+Po wybraniu elementu automatycznie generowana jest karta z:
+• nazwą wybranego elementu
+• kodem QR gotowym do wydrukowania
+
+5 MAPY (Leaflet)
+
+Zintegrowano Leaflet na stronach osób i wydarzeń.
+
+Dodano znaczniki przedstawiające lokalizacje ławek i eventów.
+
+=== KONIEC  BACKLOGU ===
