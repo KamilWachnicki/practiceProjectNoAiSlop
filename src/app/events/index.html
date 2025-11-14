@@ -8,10 +8,19 @@
   <link rel="stylesheet" href="/src/app/style.css">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="/src/app/login/adminstatus.js" defer></script>
 </head>
 
 <body>
   <nav class="navMenu">
+    <button class="navButton loginButton" title="Zaloguj się">
+      <img src="/src/icons/login.svg" alt="home icon">
+      <a href="/src/app/login/index.html">Zaloguj się</a>
+    </button>
+    <button class="navButton loginButton" title="Zaloguj się">
+      <img src="/src/icons/login.svg" alt="home icon">
+      <a href="/src/app/login/index.html">Zaloguj się</a>
+    </button>
     <button class="navButton homeButton" title="Strona główna">
       <img src="/src/icons/home.svg" alt="home icon">
       <a href="/src/app/index.html">Strona Główna</a>
@@ -24,7 +33,7 @@
       <img src="/src/icons/events.svg" alt="events icon">
       <a href="/src/app/events/index.html">Wydarzenia</a>
     </button>
-    <button class="navButton eventsButton" title="Qr Template">
+    <button class="navButton eventsButton" title="Qr Template" id="qrAdminButton">
         <img src="/src/icons/qrCode.svg" alt="qr code icon">
         <a href="/src/app/templateGenerator/index.html">Qr Template</a>
     </button>

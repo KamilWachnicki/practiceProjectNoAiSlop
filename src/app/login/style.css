@@ -14,46 +14,6 @@ body {
   color: #2C3E50;
 }
 
-#usrname,
-#passw {
-  margin-bottom: 12px;
-  width: 240px;
-  height: 32px;
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-  font-size: 14px;
-  transition: border 0.2s, box-shadow 0.2s;
-}
-
-#uname:focus,
-#passw:focus {
-  border-color: #4a7bdc;
-  box-shadow: 0 0 4px rgba(74, 123, 220, 0.4);
-}
-
-#submit {
-  width: 240px;
-  height: 36px;
-  padding: 6px 10px;
-  background-color: #4a7bdc;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 15px;
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.1s;
-}
-
-#submit:hover {
-  background-color: #3d6ac0;
-}
-
-#submit:active {
-  transform: scale(0.97);
-}
-
 /* === Layout === */
 body {
   display: flex;

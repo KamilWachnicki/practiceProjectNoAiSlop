@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kolbuszowa Notice Board</title>
   <link rel="stylesheet" href="/src/app/style.css">
+  <script src="/src/app/login/adminstatus.js" defer></script>
   <link rel="stylesheet" href="dedicatedCss.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
@@ -14,6 +15,10 @@
 
 <body>
   <nav class="navMenu">
+    <button class="navButton loginButton" title="Zaloguj się">
+      <img src="/src/icons/login.svg" alt="home icon">
+      <a href="/src/app/login/index.html">Zaloguj się</a>
+    </button>
     <button class="navButton homeButton" title="Strona główna">
       <img src="/src/icons/home.svg" alt="home icon">
       <a href="/src/app/index.html">Strona Główna</a>
@@ -26,9 +31,9 @@
       <img src="/src/icons/events.svg" alt="events icon">
       <a href="/src/app/events/index.html">Wydarzenia</a>
     </button>
-    <button class="navButton eventsButton" title="Qr Template">
-      <img src="/src/icons/qrCode.svg" alt="qr code icon">
-      <a href="/src/app/templateGenerator/index.html">Qr Template</a>
+    <button class="navButton eventsButton" title="Qr Template" id="qrAdminButton">
+        <img src="/src/icons/qrCode.svg" alt="qr code icon">
+        <a href="/src/app/templateGenerator/index.html">Qr Template</a>
     </button>
   </nav>
 
