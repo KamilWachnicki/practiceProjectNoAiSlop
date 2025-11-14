@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="dedicatedCss.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -33,30 +34,21 @@
 
   <main class="dataWrapper">
 
-    <!-- Category Select -->
     <div class="selectCategory">
       <label for="categorySelect">Kategoria:</label>
       <select id="categorySelect">
-        <option value="">Wybierz kategorię...</option>
+        <option value="all">Wszystkie</option>
         <option value="events">Wydarzenia</option>
         <option value="people">Osoby</option>
-        <option value="places">Miejsca</option>
       </select>
     </div>
 
-    <!-- Search Bar -->
     <div class="searchWrapper">
       <input type="text" id="templateSearchInput" placeholder="Wyszukaj...">
       <button id="templateSearchButton">Szukaj</button>
     </div>
 
-    <!-- Map -->
-    <div class="mapContainer" id="map">
-      <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=21.740%2C50.240%2C21.840%2C50.300&layer=mapnik">
-      </iframe>
-    </div>
-
+    <div class="mapContainer" id="map"></div>
   </main>
 </body>
 
