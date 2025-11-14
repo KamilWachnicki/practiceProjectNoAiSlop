@@ -1,6 +1,3 @@
-Poniżej masz **poprawiony, profesjonalny backlog**, przerobiony według zasad z Twojego PDF-a (user stories, kryteria akceptacji, jasne tytuły, wartość biznesowa).
-Możesz to od razu wkleić do swojego backlogu w Jira / Linear / Notion.
-
 ---
 
 # **BACKLOG (WERSJA POPRAWIONA)**
