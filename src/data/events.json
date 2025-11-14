@@ -5,7 +5,11 @@
     "start_date": "2025-11-17",
     "end_date": "2025-11-20",
     "location": "Warsaw & Online, Poland",
-    "description": "Conferences for Angular (NG), JavaScript (JS) and Artificial Intelligence (AI) bringing together developers and industry experts. Workshops on Nov 17, NG on Nov 18, JS on Nov 19, AI on Nov 20."
+    "description": "Conferences for Angular (NG), JavaScript (JS) and Artificial Intelligence (AI) bringing together developers and industry experts. Workshops on Nov 17, NG on Nov 18, JS on Nov 19, AI on Nov 20.",
+    "geo": {
+      "lat": 50.2372,
+      "lon": 21.7844
+    }
   },
   {
     "id": 2,
@@ -13,7 +17,11 @@
     "start_date": "2025-11-15",
     "end_date": "2025-11-22",
     "location": "Toruń, Poland",
-    "description": "Film festival recognizing cinematography in film, television and music videos."
+    "description": "Film festival recognizing cinematography in film, television and music videos.",
+    "geo": {
+      "lat": 50.2516,
+      "lon": 21.7731
+    }
   },
   {
     "id": 3,
@@ -21,7 +29,11 @@
     "start_date": "2025-11-19",
     "end_date": "2025-11-23",
     "location": "Warsaw, Poland",
-    "description": "International figure skating competition, part of the ISU Challenger Series, with men's singles, women’s singles and ice dance."
+    "description": "International figure skating competition, part of the ISU Challenger Series, with men's singles, women’s singles and ice dance.",
+    "geo": {
+      "lat": 50.2298,
+      "lon": 21.7889
+    }
   },
   {
     "id": 4,
@@ -29,7 +41,11 @@
     "start_date": "2025-11-21",
     "end_date": "2025-11-23",
     "location": "Poland",
-    "description": "Convention organised by ASI Poland; details on sessions to be confirmed."
+    "description": "Convention organised by ASI Poland; details on sessions to be confirmed.",
+    "geo": {
+      "lat": 50.2445,
+      "lon": 21.7992
+    }
   },
   {
     "id": 5,
@@ -37,6 +53,10 @@
     "start_date": "2025-11-06",
     "end_date": "2025-11-11",
     "location": "Puławy, Poland",
-    "description": "Music festival showcasing numerous genres and unconventional combinations."
+    "description": "Music festival showcasing numerous genres and unconventional combinations.",
+    "geo": {
+      "lat": 50.2327,
+      "lon": 21.7543
+    }
   }
 ]

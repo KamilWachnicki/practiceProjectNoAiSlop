@@ -7,6 +7,10 @@
   <title>Kolbuszowa Notice Board</title>
   <link rel="stylesheet" href="/src/app/style.css">
   <script src="/src/app/login/adminstatus.js" defer></script>
+  <link rel="stylesheet" href="dedicatedCss.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -27,15 +31,35 @@
       <img src="/src/icons/events.svg" alt="events icon">
       <a href="/src/app/events/index.html">Wydarzenia</a>
     </button>
+<<<<<<< HEAD
     <button class="navButton eventsButton" title="Qr Template" id="qrAdminButton">
         <img src="/src/icons/qrCode.svg" alt="qr code icon">
         <a href="/src/app/templateGenerator/index.html">Qr Template</a>
+=======
+    <button class="navButton eventsButton" title="Qr Template">
+      <img src="/src/icons/qrCode.svg" alt="qr code icon">
+      <a href="/src/app/templateGenerator/index.html">Qr Template</a>
+>>>>>>> a255b2cb94863d2558f151307efd2699ef47255c
     </button>
   </nav>
 
   <main class="dataWrapper">
-    <h1>Witamy na tablicy ogłoszeń Kolbuszowej!</h1>
-    <p>Wybierz sekcję z menu po lewej, aby zobaczyć więcej informacji.</p>
+
+    <div class="selectCategory">
+      <label for="categorySelect">Kategoria:</label>
+      <select id="categorySelect">
+        <option value="all">Wszystkie</option>
+        <option value="events">Wydarzenia</option>
+        <option value="people">Osoby</option>
+      </select>
+    </div>
+
+    <div class="searchWrapper">
+      <input type="text" id="templateSearchInput" placeholder="Wyszukaj...">
+      <button id="templateSearchButton">Szukaj</button>
+    </div>
+
+    <div class="mapContainer" id="map"></div>
   </main>
 </body>
 

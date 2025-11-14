@@ -6,14 +6,12 @@ const category_json = {
     "people": "people.json"
 }
 
-// Store selected values
 const params = {
     category: "",
     name: "",
     pointer: ""
 }
 
-// Read JSON and render buttons
 async function read(category, acceptedText = '') {
     const container = querySelector("#templatesList")
     container.innerHTML = ""
@@ -58,14 +56,12 @@ async function read(category, acceptedText = '') {
     }
 }
 
-// Category change
 querySelector('#categorySelect').addEventListener('change', (e) => {
     const category = e.target.value
     if (!category) return
     read(category)
 })
 
-// Search button
 querySelector("#templateSearchButton").addEventListener("click", () => {
     const text = querySelector("#templateSearchInput").value.trim()
     const category = querySelector("#categorySelect").value
@@ -73,7 +69,6 @@ querySelector("#templateSearchButton").addEventListener("click", () => {
     read(category, text)
 })
 
-// Generate QR code page
 querySelector("#generateTemplateButton").addEventListener("click", () => {
     if (!params.category || !params.name || !params.pointer) return
 
