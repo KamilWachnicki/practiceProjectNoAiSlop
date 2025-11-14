@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kolbuszowa Notice Board</title>
   <link rel="stylesheet" href="/src/app/style.css">
-  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <script src="/src/app/login/adminstatus.js" defer></script>
 </head>
@@ -36,13 +35,14 @@
   </nav>
 
   <main class="dataWrapper">
-    <div class="searchContainer">
-      <input type="text" id="searchInput" placeholder="Wyszukaj wydrzen...">
-    </div>
-
-    <div class="cardsContainer" id="cardsContainer">
-
-    </div>
+    <h1>
+      Zaloguj się
+    </h1>
+    <br>
+    <input type="text" name="usrname" id="usrname"><br>
+    <input type="text" name="passw" id="passw"><br>
+    <input type="button" name="submit" id="submit" onclick="login()" value="Zaloguj się">
+    <p id="loginplaceholder"></p>
   </main>
 </body>
 
