@@ -1,6 +1,6 @@
 ---
 
-# **BACKLOG (WERSJA POPRAWIONA)**
+# **BACKLOG**
 
 ---
 
