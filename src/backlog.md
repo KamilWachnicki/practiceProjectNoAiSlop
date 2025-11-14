@@ -4,21 +4,21 @@
 
 ---
 
-## **PBI 1.1 – Wyświetlenie podstawowego layoutu strony głównej**
+## **PBI 1.1 – Wyświetlenie layoutu strony głównej z mapą i listą filtrów**
 
 **User story:**
 Jako użytkownik
-chcę zobaczyć stronę główną z podstawowym układem
-aby wiedzieć, gdzie zaczyna się nawigacja.
+chcę zobaczyć stronę główną z mapą Leaflet i listą filtrów
+aby łatwo znaleźć osoby lub wydarzenia oraz zobaczyć ich lokalizacje.
 
 **Kryteria akceptacji:**
 
-1. Given otwieram stronę główną, When strona się załaduje, Then widzę header, tytuł i sekcje.
-2. Given brak danych z backendu, When strona się ładuje, Then UI prezentuje placeholdery.
+1. Given otwieram stronę główną, When strona się ładuje, Then widzę header, tytuł, mapę Leaflet, listę filtrów i input do wyszukiwania.
+2. Given brak danych z backendu, When strona się ładuje, Then mapa i lista pokazują placeholdery.
+3. Given wpisuję tekst w polu wyszukiwania lub wybieram kategorię, When filtr działa, Then lista i mapa aktualizują się dynamicznie.
 
 **Priorytet:** Wysoki
-**Szacowanie:** 1 SP
-**Notatki:** podstawowy HTML/CSS, brak logiki.
+**Szacowanie:** 3 SP
 
 ---
 
@@ -27,18 +27,35 @@ aby wiedzieć, gdzie zaczyna się nawigacja.
 **User story:**
 Jako użytkownik
 chcę kliknąć w element menu na stronie głównej
-aby przejść do wybranej sekcji.
+aby przejść do wybranej podstrony.
 
 **Kryteria akceptacji:**
 
 1. Given widzę trzy przyciski, When kliknę któryś, Then jestem przekierowany do odpowiedniej podstrony.
 2. Given hover, When najeżdżam, Then przyciski mają efekt wizualny.
+3. Given nie jestem zalogowany lub jestem zwykłym użytkownikiem, When kliknę Generator QR, Then dostęp jest zablokowany.
 
 **Priorytet:** Wysoki
-**Szacowanie:** 1 SP
-**Notatki:** prosta nawigacja.
+**Szacowanie:** 2 SP
 
 ---
+
+## **PBI 1.3 – Logowanie użytkownika (prymitywne)**
+
+**User story:**
+Jako administrator
+chcę zalogować się przy użyciu prostego loginu i hasła z JSON
+aby mieć dostęp do generatora QR.
+
+**Kryteria akceptacji:**
+
+1. Given wprowadzam login i hasło, When dane są poprawne, Then ustawiana jest cookie z rolą użytkownika.
+2. Given zalogowany jako admin, Then mogę otworzyć generator QR.
+3. Given zalogowany jako zwykły użytkownik lub gość, Then generator QR jest niedostępny.
+4. Given błędne dane, Then pojawia się komunikat błędu.
+
+**Priorytet:** Wysoki
+**Szacowanie:** 2 SP
 
 ---
 
@@ -55,12 +72,11 @@ aby wybrać konkretną postać.
 
 **Kryteria akceptacji:**
 
-1. Given otwieram podstronę Osoby, Then widzę listę imion z bazy danych.
+1. Given otwieram podstronę Osoby, Then widzę listę imion z JSON.
 2. Given brak osób, Then widzę komunikat „Brak danych”.
 
 **Priorytet:** Wysoki
 **Szacowanie:** 2 SP
-**Notatki:** pobieranie JSON / API.
 
 ---
 
@@ -102,20 +118,16 @@ aby dowiedzieć się więcej o bohaterze.
 
 **User story:**
 Jako użytkownik
-chcę zobaczyć lokalizację ławki na mapie
+chcę zobaczyć lokalizację osoby na mapie
 aby łatwo znaleźć to miejsce.
 
 **Kryteria akceptacji:**
 
-1. Given strona osoby się ładuje, Then mapa Leaflet wyświetla marker.
-2. Given klikam w marker, Then widzę tooltip z nazwą osoby.
+1. Given strona osoby się ładuje, Then mapa Leaflet wyświetla marker z nazwą osoby.
+2. Given klikam marker, Then pojawia się tooltip z nazwą osoby.
 
 **Priorytet:** Wysoki
 **Szacowanie:** 3 SP
-
-**Notatki:** integracja mapy jako osobny komponent.
-
----
 
 ---
 
@@ -167,12 +179,10 @@ aby łatwo tam trafić.
 **Kryteria akceptacji:**
 
 1. Given otwieram stronę wydarzenia, Then widzę mapę z markerem.
-2. Given marker jest kliknięty, Then wyświetla się nazwa/typ wydarzenia.
+2. Given kliknięty marker, Then wyświetla się nazwa/typ wydarzenia.
 
 **Priorytet:** Wysoki
 **Szacowanie:** 3 SP
-
----
 
 ---
 
@@ -180,17 +190,18 @@ aby łatwo tam trafić.
 
 ---
 
-## **PBI 4.1 – Wyświetlenie listy kategorii**
+## **PBI 4.1 – Wyświetlenie listy kategorii (tylko dla admina)**
 
 **User story:**
-Jako użytkownik
+Jako administrator
 chcę wybrać kategorię do generowania QR
 aby zawęzić listę wyników.
 
 **Kryteria akceptacji:**
 
-1. Given strona generatora jest otwarta, Then widzę listę kategorii.
+1. Given zalogowany jako admin, Then widzę listę kategorii.
 2. Given wybiorę kategorię, Then lista elementów zmienia się dynamicznie.
+3. Given nie jestem adminem, Then nie widzę generatora QR.
 
 **Priorytet:** Wysoki
 **Szacowanie:** 2 SP
@@ -200,7 +211,7 @@ aby zawęzić listę wyników.
 ## **PBI 4.2 – Lista elementów po wybraniu kategorii**
 
 **User story:**
-Jako użytkownik
+Jako administrator
 chcę zobaczyć elementy w danej kategorii
 aby wybrać właściwy do wygenerowania QR.
 
@@ -248,8 +259,6 @@ aby użyć jej fizycznie.
 
 ---
 
----
-
 # **EPIC 5 — MAPY (LEAFLET)**
 
 ---
@@ -259,7 +268,7 @@ aby użyć jej fizycznie.
 **User story:**
 Jako developer
 chcę mieć gotowy komponent mapy
-aby używać go w wielu podstronach.
+aby używać go w wielu podstronach i na stronie głównej.
 
 **Kryteria akceptacji:**
 
@@ -285,5 +294,23 @@ aby wskazywać lokalizacje osób i wydarzeń.
 
 **Priorytet:** Wysoki
 **Szacowanie:** 2 SP
+
+---
+
+## **PBI 5.3 – Filtracja elementów na mapie**
+
+**User story:**
+Jako użytkownik
+chcę filtrować elementy na mapie według kategorii i wyszukiwać po nazwie
+aby szybko znaleźć interesujące miejsca.
+
+**Kryteria akceptacji:**
+
+1. Given wybieram kategorię (wszystkie, wydarzenia, osoby), Then mapa pokazuje tylko pasujące markery.
+2. Given wpisuję tekst w wyszukiwarkę, Then lista i mapa aktualizują się dynamicznie.
+3. Given brak pasujących elementów, Then mapa wyświetla komunikat „Brak wyników”.
+
+**Priorytet:** Wysoki
+**Szacowanie:** 3 SP
 
 ---
