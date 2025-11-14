@@ -4,34 +4,54 @@
     "Surname": "Oppenheimer",
     "Category": "Physicist",
     "Description": "American physicist known as the 'father of the atomic bomb' for leading the Manhattan Project. He later directed the Institute for Advanced Study and advocated for peaceful nuclear use.",
-    "imageFolder": "Robert_Oppenheimer"
+    "imageFolder": "Robert_Oppenheimer",
+    "location": {
+      "lat": 50.2461,
+      "lon": 21.7814
+    }
   },
   {
     "Name": "Albert",
     "Surname": "Einstein",
     "Category": "Physicist",
     "Description": "German-born theoretical physicist who developed the theory of relativity and explained the photoelectric effect. Nobel laureate and advocate for peace and civil rights.",
-    "imageFolder": "Albert_Einstein"
+    "imageFolder": "Albert_Einstein",
+    "location": {
+      "lat": 50.2389,
+      "lon": 21.7652
+    }
   },
   {
     "Name": "Marie",
     "Surname": "Curie",
     "Category": "Chemist and Physicist",
     "Description": "Polish-born scientist who discovered polonium and radium. First person to win Nobel Prizes in two sciences and pioneer of research on radioactivity.",
-    "imageFolder": "Marie_Curie"
+    "imageFolder": "Marie_Curie",
+    "location": {
+      "lat": 50.2553,
+      "lon": 21.7947
+    }
   },
   {
     "Name": "Nikola",
     "Surname": "Tesla",
     "Category": "Inventor and Electrical Engineer",
     "Description": "Serbian-American inventor and engineer who developed alternating current systems and contributed to wireless communication and electric motors.",
-    "imageFolder": "Nikola_Tesla"
+    "imageFolder": "Nikola_Tesla",
+    "location": {
+      "lat": 50.2334,
+      "lon": 21.7728
+    }
   },
   {
     "Name": "Isaac",
     "Surname": "Newton",
     "Category": "Mathematician and Physicist",
     "Description": "English scientist who formulated the laws of motion and gravity, co-developed calculus, and revolutionized physics and mathematics.",
-    "imageFolder": "Isaac_Newton"
+    "imageFolder": "Isaac_Newton",
+    "location": {
+      "lat": 50.2427,
+      "lon": 21.7589
+    }
   }
 ]
