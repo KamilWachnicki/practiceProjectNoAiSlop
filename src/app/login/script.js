@@ -11,11 +11,10 @@ async function login() {
         document.cookie = `loggedIn=true; path=/; max-age=86400`;
         if (user.role === "admin") {
             document.cookie = `isAdmin=true; path=/; max-age=86400`;
-            window.location.reload();
         } else {
             document.cookie = `isAdmin=false; path=/; max-age=86400`;
-            window.location.reload();
         }
+        window.location.href = "logout.html";
         document.getElementById("loginplaceholder").innerHTML = "login success";
         return;
     }
