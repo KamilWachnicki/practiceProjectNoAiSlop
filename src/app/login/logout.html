@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NG Poland, JS Poland & AI Poland – Wydarzenia</title>
-  <link rel="stylesheet" href="/src/app/events/style.css">
-  <link rel="stylesheet" href="style.css">
+  <title>Kolbuszowa Notice Board</title>
+  <link rel="stylesheet" href="/src/app/style.css">
+  <script src="script.js" defer></script>
+  <script src="logout.js" defer></script>
   <script src="/src/app/login/adminstatus.js" defer></script>
 </head>
 
@@ -32,31 +33,20 @@
       <img src="/src/icons/events.svg" alt="events icon">
       <a href="/src/app/events/index.html">Wydarzenia</a>
     </button>
-    <button class="navButton qrTemplateButton" title="Qr Template"  id="qrAdminButton">
-      <img src="/src/icons/qrCode.svg" alt="qr code icon">
-      <a href="/src/app/templateGenerator/index.html">Qr Template</a>
+    <button class="navButton eventsButton" title="Qr Template" id="qrAdminButton">
+        <img src="/src/icons/qrCode.svg" alt="qr code icon">
+        <a href="/src/app/templateGenerator/index.html">Qr Template</a>
     </button>
   </nav>
 
   <main class="dataWrapper">
-    <section class="eventProfile">
-      <div class="eventInfo">
-        <h1>NG Poland, JS Poland & AI Poland</h1>
-        <h2>17–20 listopada 2025 · Warsaw & Online, Poland</h2>
-        <p>
-          Konferencje poświęcone Angularowi (NG), JavaScriptowi (JS) oraz sztucznej inteligencji (AI),
-          łączące programistów i ekspertów z branży. Warsztaty odbędą się 17 listopada, 
-          NG – 18 listopada, JS – 19 listopada, a AI – 20 listopada.
-        </p>
-      </div>
-    </section>
-
-    <div class="mapContainer">
-      <iframe
-        src="https://www.openstreetmap.org/export/embed.html?bbox=21.00%2C52.20%2C21.05%2C52.25&amp;layer=mapnik&amp;marker=52.23%2C21.02"
-        allowfullscreen loading="lazy">
-      </iframe>
-    </div>
+    <h1>
+      Wyloguj się
+    </h1>
+    <br>
+    <input type="button" name="submit" id="submit" onclick="logout()" value="Wyloguj się">
+    <p id="loginplaceholder"></p>
   </main>
 </body>
+
 </html>
