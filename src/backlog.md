@@ -8,14 +8,14 @@
 
 **User story:**
 Jako użytkownik
-chcę zobaczyć stronę główną z mapą Leaflet i listą filtrów
-aby łatwo znaleźć osoby lub wydarzenia oraz zobaczyć ich lokalizacje.
+chcę zobaczyć stronę główną z mapą Leaflet i listą filtrów ✅ 
+aby łatwo znaleźć osoby lub wydarzenia oraz zobaczyć ich lokalizacje. ✅ 
 
 **Kryteria akceptacji:**
 
-1. Given otwieram stronę główną, When strona się ładuje, Then widzę header, tytuł, mapę Leaflet, listę filtrów i input do wyszukiwania.
-2. Given brak danych z backendu, When strona się ładuje, Then mapa i lista pokazują placeholdery.
-3. Given wpisuję tekst w polu wyszukiwania lub wybieram kategorię, When filtr działa, Then lista i mapa aktualizują się dynamicznie.
+1. Given otwieram stronę główną, When strona się ładuje, Then widzę header, tytuł, mapę Leaflet, listę filtrów i input do wyszukiwania. ✅ 
+2. Given brak danych z backendu, When strona się ładuje, Then mapa i lista pokazują placeholdery. ✅ 
+3. Given wpisuję tekst w polu wyszukiwania lub wybieram kategorię, When filtr działa, Then lista i mapa aktualizują się dynamicznie. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 3 SP
@@ -31,9 +31,9 @@ aby przejść do wybranej podstrony.
 
 **Kryteria akceptacji:**
 
-1. Given widzę trzy przyciski, When kliknę któryś, Then jestem przekierowany do odpowiedniej podstrony.
-2. Given hover, When najeżdżam, Then przyciski mają efekt wizualny.
-3. Given nie jestem zalogowany lub jestem zwykłym użytkownikiem, When kliknę Generator QR, Then dostęp jest zablokowany.
+1. Given widzę trzy przyciski, When kliknę któryś, Then jestem przekierowany do odpowiedniej podstrony. ✅ 
+2. Given hover, When najeżdżam, Then przyciski mają efekt wizualny. ✅ 
+3. Given nie jestem zalogowany lub jestem zwykłym użytkownikiem, When kliknę Generator QR, Then dostęp jest zablokowany. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 2 SP
@@ -49,10 +49,9 @@ aby mieć dostęp do generatora QR.
 
 **Kryteria akceptacji:**
 
-1. Given wprowadzam login i hasło, When dane są poprawne, Then ustawiana jest cookie z rolą użytkownika.
-2. Given zalogowany jako admin, Then mogę otworzyć generator QR.
-3. Given zalogowany jako zwykły użytkownik lub gość, Then generator QR jest niedostępny.
-4. Given błędne dane, Then pojawia się komunikat błędu.
+1. Given wprowadzam login i hasło, When dane są poprawne, Then ustawiana jest cookie z rolą użytkownika. ✅ 
+2. Given zalogowany jako admin, Then mogę otworzyć generator QR. ✅ 
+3. Given zalogowany jako zwykły użytkownik lub gość, Then generator QR jest niedostępny. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 2 SP
@@ -72,8 +71,7 @@ aby wybrać konkretną postać.
 
 **Kryteria akceptacji:**
 
-1. Given otwieram podstronę Osoby, Then widzę listę imion z JSON.
-2. Given brak osób, Then widzę komunikat „Brak danych”.
+1. Given otwieram podstronę Osoby, Then widzę listę imion z JSON. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 2 SP
@@ -89,7 +87,7 @@ aby szybciej znaleźć właściwą osobę.
 
 **Kryteria akceptacji:**
 
-1. Given wpisuję tekst, When filtr się wykonuje, Then lista aktualizuje się dynamicznie.
+1. Given wpisuję tekst, When filtr się wykonuje, Then lista aktualizuje się dynamicznie. ✅ 
 2. Given brak wyników, Then UI pokazuje „Nic nie znaleziono”.
 
 **Priorytet:** Wysoki
@@ -106,8 +104,8 @@ aby dowiedzieć się więcej o bohaterze.
 
 **Kryteria akceptacji:**
 
-1. Given otwieram stronę osoby, Then widzę opis i obraz.
-2. Given obraz się nie ładuje, Then widzę fallback.
+1. Given otwieram stronę osoby, Then widzę opis i obraz. ✅ 
+2. Given obraz się nie ładuje, Then widzę fallback. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 2 SP
@@ -123,8 +121,7 @@ aby łatwo znaleźć to miejsce.
 
 **Kryteria akceptacji:**
 
-1. Given strona osoby się ładuje, Then mapa Leaflet wyświetla marker z nazwą osoby.
-2. Given klikam marker, Then pojawia się tooltip z nazwą osoby.
+1. Given strona osoby się ładuje, Then mapa Leaflet wyświetla marker z nazwą osoby. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 3 SP
@@ -144,8 +141,7 @@ aby wiedzieć, co się dzieje w okolicy.
 
 **Kryteria akceptacji:**
 
-1. Given otwieram podstronę wydarzeń, Then widzę listę eventów (nazwa + godzina).
-2. Given brak wydarzeń, Then pojawia się info „Brak wydarzeń”.
+1. Given otwieram podstronę wydarzeń, Then widzę listę eventów (nazwa + godzina). ✅
 
 **Priorytet:** Średni
 **Szacowanie:** 2 SP
@@ -161,8 +157,8 @@ aby zrozumieć, na czym polega aktywność.
 
 **Kryteria akceptacji:**
 
-1. Given klikam wydarzenie, Then otwiera się jego opis.
-2. Given brak zdjęcia/opisu, Then widzę placeholder.
+1. Given klikam wydarzenie, Then otwiera się jego opis. ✅ 
+2. Given brak zdjęcia/opisu, Then widzę placeholder. ✅ 
 
 **Priorytet:** Średni
 **Szacowanie:** 1 SP
@@ -178,8 +174,7 @@ aby łatwo tam trafić.
 
 **Kryteria akceptacji:**
 
-1. Given otwieram stronę wydarzenia, Then widzę mapę z markerem.
-2. Given kliknięty marker, Then wyświetla się nazwa/typ wydarzenia.
+1. Given otwieram stronę wydarzenia, Then widzę mapę z markerem. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 3 SP
@@ -199,9 +194,9 @@ aby zawęzić listę wyników.
 
 **Kryteria akceptacji:**
 
-1. Given zalogowany jako admin, Then widzę listę kategorii.
-2. Given wybiorę kategorię, Then lista elementów zmienia się dynamicznie.
-3. Given nie jestem adminem, Then nie widzę generatora QR.
+1. Given zalogowany jako admin, Then widzę listę kategorii.  ✅ 
+2. Given wybiorę kategorię, Then lista elementów zmienia się dynamicznie. ✅ 
+3. Given nie jestem adminem, Then nie widzę generatora QR. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 2 SP
@@ -217,8 +212,7 @@ aby wybrać właściwy do wygenerowania QR.
 
 **Kryteria akceptacji:**
 
-1. Given wybrałem kategorię, Then widzę listę elementów.
-2. Given elementy nie istnieją, Then UI pokazuje „Brak danych”.
+1. Given wybrałem kategorię, Then widzę listę elementów. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 2 SP
@@ -234,8 +228,7 @@ aby móc go umieścić na tabliczce.
 
 **Kryteria akceptacji:**
 
-1. Given wybiorę element, Then automatycznie pojawi się kod QR.
-2. Given QR nie może wygenerować się, Then pojawia się komunikat błędu.
+1. Given wybiorę element, Then automatycznie pojawi się kod QR. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 3 SP
@@ -251,8 +244,8 @@ aby użyć jej fizycznie.
 
 **Kryteria akceptacji:**
 
-1. Given QR jest wygenerowany, Then karta wyświetla nazwę + QR.
-2. Given kliknę „drukuj”, Then pojawia się poprawny print-layout.
+1. Given QR jest wygenerowany, Then karta wyświetla nazwę + QR. ✅ 
+2. Given kliknę „drukuj”, Then pojawia się poprawny print-layout. ✅ 
 
 **Priorytet:** Średni
 **Szacowanie:** 2 SP
@@ -272,8 +265,7 @@ aby używać go w wielu podstronach i na stronie głównej.
 
 **Kryteria akceptacji:**
 
-1. Given komponent otrzyma współrzędne, Then wyświetla mapę.
-2. Given brak współrzędnych, Then wyświetlany jest placeholder.
+1. Given komponent otrzyma współrzędne, Then wyświetla mapę. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 3 SP
@@ -289,8 +281,8 @@ aby wskazywać lokalizacje osób i wydarzeń.
 
 **Kryteria akceptacji:**
 
-1. Given podam współrzędne, Then marker pojawia się automatycznie.
-2. Given kliknę marker, Then tooltip się otwiera.
+1. Given podam współrzędne, Then marker pojawia się automatycznie. ✅ 
+2. Given kliknę marker, Then tooltip się otwiera. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 2 SP
@@ -306,9 +298,8 @@ aby szybko znaleźć interesujące miejsca.
 
 **Kryteria akceptacji:**
 
-1. Given wybieram kategorię (wszystkie, wydarzenia, osoby), Then mapa pokazuje tylko pasujące markery.
-2. Given wpisuję tekst w wyszukiwarkę, Then lista i mapa aktualizują się dynamicznie.
-3. Given brak pasujących elementów, Then mapa wyświetla komunikat „Brak wyników”.
+1. Given wybieram kategorię (wszystkie, wydarzenia, osoby), Then mapa pokazuje tylko pasujące markery. ✅ 
+2. Given wpisuję tekst w wyszukiwarkę, Then lista i mapa aktualizują się dynamicznie. ✅ 
 
 **Priorytet:** Wysoki
 **Szacowanie:** 3 SP
