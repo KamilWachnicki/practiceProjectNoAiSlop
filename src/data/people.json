@@ -2,8 +2,8 @@
   {
     "Name": "J. Robert",
     "Surname": "Oppenheimer",
-    "Category": "Physicist",
-    "Description": "American physicist known as the 'father of the atomic bomb' for leading the Manhattan Project. He later directed the Institute for Advanced Study and advocated for peaceful nuclear use.",
+    "Category": "Fizyk",
+    "Description": "Amerykański fizyk znany jako „ojciec bomby atomowej” za kierowanie Projektem Manhattan. Później kierował Instytutem Studiów Zaawansowanych i opowiadał się za pokojowym wykorzystaniem energii jądrowej.",
     "imageFolder": "Robert_Oppenheimer",
     "location": {
       "lat": 50.2461,
@@ -13,8 +13,8 @@
   {
     "Name": "Albert",
     "Surname": "Einstein",
-    "Category": "Physicist",
-    "Description": "German-born theoretical physicist who developed the theory of relativity and explained the photoelectric effect. Nobel laureate and advocate for peace and civil rights.",
+    "Category": "Fizyk",
+    "Description": "Urodzony w Niemczech fizyk teoretyczny, twórca teorii względności i autor wyjaśnienia efektu fotoelektrycznego. Laureat Nagrody Nobla, działacz na rzecz pokoju i praw obywatelskich.",
     "imageFolder": "Albert_Einstein",
     "location": {
       "lat": 50.2389,
@@ -24,8 +24,8 @@
   {
     "Name": "Marie",
     "Surname": "Curie",
-    "Category": "Chemist and Physicist",
-    "Description": "Polish-born scientist who discovered polonium and radium. First person to win Nobel Prizes in two sciences and pioneer of research on radioactivity.",
+    "Category": "Chemiczka i Fizyczka",
+    "Description": "Urodzona w Polsce naukowczyni, odkrywczyni polonu i radu. Pierwsza osoba, która zdobyła dwie Nagrody Nobla w dwóch różnych dziedzinach nauki; pionierka badań nad promieniotwórczością.",
     "imageFolder": "Marie_Curie",
     "location": {
       "lat": 50.2553,
@@ -35,8 +35,8 @@
   {
     "Name": "Nikola",
     "Surname": "Tesla",
-    "Category": "Inventor and Electrical Engineer",
-    "Description": "Serbian-American inventor and engineer who developed alternating current systems and contributed to wireless communication and electric motors.",
+    "Category": "Wynalazca i Inżynier Elektryczny",
+    "Description": "Serbsko-amerykański wynalazca i inżynier, który opracował systemy prądu przemiennego oraz przyczynił się do rozwoju komunikacji bezprzewodowej i silników elektrycznych.",
     "imageFolder": "Nikola_Tesla",
     "location": {
       "lat": 50.2334,
@@ -46,8 +46,8 @@
   {
     "Name": "Isaac",
     "Surname": "Newton",
-    "Category": "Mathematician and Physicist",
-    "Description": "English scientist who formulated the laws of motion and gravity, co-developed calculus, and revolutionized physics and mathematics.",
+    "Category": "Matematyk i Fizyk",
+    "Description": "Angielski naukowiec, który sformułował prawa ruchu i grawitacji, współtwórca rachunku różniczkowego; zrewolucjonizował fizykę i matematykę.",
     "imageFolder": "Isaac_Newton",
     "location": {
       "lat": 50.2427,
