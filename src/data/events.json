@@ -7,8 +7,8 @@
     "location": "Warszawa i Online, Polska",
     "description": "Konferencje poświęcone Angularowi (NG), JavaScriptowi (JS) i Sztucznej Inteligencji (AI), gromadzące programistów oraz ekspertów branżowych. Warsztaty 17 listopada, NG 18 listopada, JS 19 listopada, AI 20 listopada.",
     "geo": {
-      "lat": 50.2372,
-      "lon": 21.7844
+      "lat": 52.23,
+      "lon": 21.02
     }
   },
   {
@@ -19,8 +19,8 @@
     "location": "Toruń, Polska",
     "description": "Festiwal filmowy wyróżniający osiągnięcia w dziedzinie zdjęć filmowych w filmach, telewizji i teledyskach.",
     "geo": {
-      "lat": 50.2516,
-      "lon": 21.7731
+      "lat": 52.23,
+      "lon": 21.01
     }
   },
   {
@@ -31,8 +31,8 @@
     "location": "Warszawa, Polska",
     "description": "Międzynarodowe zawody łyżwiarstwa figurowego z cyklu ISU Challenger Series, obejmujące rywalizację solistów, solistek oraz par tanecznych.",
     "geo": {
-      "lat": 50.2298,
-      "lon": 21.7889
+      "lat": 53.01,
+      "lon": 18.61
     }
   },
   {
@@ -43,8 +43,8 @@
     "location": "Polska",
     "description": "Konwencja organizowana przez ASI Poland; szczegóły dotyczące programu zostaną potwierdzone.",
     "geo": {
-      "lat": 50.2445,
-      "lon": 21.7992
+      "lat": 52.22,
+      "lon": 21.00
     }
   },
   {
@@ -55,8 +55,8 @@
     "location": "Puławy, Polska",
     "description": "Festiwal muzyczny prezentujący różnorodne gatunki i niekonwencjonalne połączenia muzyczne.",
     "geo": {
-      "lat": 50.2327,
-      "lon": 21.7543
+      "lat": 52.0,
+      "lon": 20.0
     }
   }
 ]

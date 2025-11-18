@@ -35,6 +35,8 @@ async function appendLeaflets(category, searchText) {
     const data = await read(category);
     const text = searchText.toLowerCase();
 
+    const positions = []
+
     // PEOPLE
     if (data.people) {
         data.people.forEach(person => {
@@ -42,6 +44,7 @@ async function appendLeaflets(category, searchText) {
             if (!fullName.includes(text)) return;
 
             const { lat, lon } = person.location;
+            positions.push([lat,lon]);
 
             const marker = L.marker([lat, lon]).addTo(map);
             leafletMarkers.push(marker);
@@ -77,6 +80,7 @@ async function appendLeaflets(category, searchText) {
             if (!eventName.includes(text)) return;
 
             const { lat, lon } = event.geo;
+            positions.push([lat,lon]);
 
             const marker = L.marker([lat, lon]).addTo(map);
             leafletMarkers.push(marker);
@@ -103,6 +107,9 @@ async function appendLeaflets(category, searchText) {
             </div>
         `);
         });
+    }
+    if (positions.length > 0) {
+        map.fitBounds(positions, { padding: [50, 50] });
     }
 }
 

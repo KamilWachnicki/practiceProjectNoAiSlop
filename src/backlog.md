@@ -4,7 +4,7 @@
 
 ---
 
-## **PBI 1.1 – Wyświetlenie layoutu strony głównej z mapą i listą filtrów**
+## **PBI 1.1 - Wyświetlenie layoutu strony głównej z mapą i listą filtrów**
 
 **User story:**
 Jako użytkownik
@@ -22,7 +22,7 @@ aby łatwo znaleźć osoby lub wydarzenia oraz zobaczyć ich lokalizacje. ✅
 
 ---
 
-## **PBI 1.2 – Dodanie trzech przycisków nawigacji (Osoby, Wydarzenia, Generator QR)**
+## **PBI 1.2 - Dodanie trzech przycisków nawigacji (Osoby, Wydarzenia, Generator QR)**
 
 **User story:**
 Jako użytkownik
@@ -40,7 +40,7 @@ aby przejść do wybranej podstrony.
 
 ---
 
-## **PBI 1.3 – Logowanie użytkownika (prymitywne)**
+## **PBI 1.3 - Logowanie użytkownika (prymitywne)**
 
 **User story:**
 Jako administrator
@@ -62,7 +62,7 @@ aby mieć dostęp do generatora QR.
 
 ---
 
-## **PBI 2.1 – Stworzenie listy osób (bez wyszukiwarki)**
+## **PBI 2.1 - Stworzenie listy osób (bez wyszukiwarki)**
 
 **User story:**
 Jako użytkownik
@@ -78,7 +78,7 @@ aby wybrać konkretną postać.
 
 ---
 
-## **PBI 2.2 – Dodanie wyszukiwarki osób**
+## **PBI 2.2 - Dodanie wyszukiwarki osób**
 
 **User story:**
 Jako użytkownik
@@ -95,7 +95,7 @@ aby szybciej znaleźć właściwą osobę.
 
 ---
 
-## **PBI 2.3 – Podstrona osoby: wersja podstawowa (zdjęcie + opis)**
+## **PBI 2.3 - Podstrona osoby: wersja podstawowa (zdjęcie + opis)**
 
 **User story:**
 Jako odwiedzający
@@ -112,7 +112,7 @@ aby dowiedzieć się więcej o bohaterze.
 
 ---
 
-## **PBI 2.4 – Podstrona osoby: integracja z mapą (Leaflet)**
+## **PBI 2.4 - Podstrona osoby: integracja z mapą (Leaflet)**
 
 **User story:**
 Jako użytkownik
@@ -132,7 +132,7 @@ aby łatwo znaleźć to miejsce.
 
 ---
 
-## **PBI 3.1 – Lista wydarzeń (bez mapy)**
+## **PBI 3.1 - Lista wydarzeń (bez mapy)**
 
 **User story:**
 Jako użytkownik
@@ -148,7 +148,7 @@ aby wiedzieć, co się dzieje w okolicy.
 
 ---
 
-## **PBI 3.2 – Podstrona wydarzenia: opis + godzina**
+## **PBI 3.2 - Podstrona wydarzenia: opis + godzina**
 
 **User story:**
 Jako użytkownik
@@ -165,7 +165,7 @@ aby zrozumieć, na czym polega aktywność.
 
 ---
 
-## **PBI 3.3 – Mapa wydarzenia (Leaflet)**
+## **PBI 3.3 - Mapa wydarzenia (Leaflet)**
 
 **User story:**
 Jako uczestnik
@@ -185,7 +185,7 @@ aby łatwo tam trafić.
 
 ---
 
-## **PBI 4.1 – Wyświetlenie listy kategorii (tylko dla admina)**
+## **PBI 4.1 - Wyświetlenie listy kategorii (tylko dla admina)**
 
 **User story:**
 Jako administrator
@@ -203,7 +203,7 @@ aby zawęzić listę wyników.
 
 ---
 
-## **PBI 4.2 – Lista elementów po wybraniu kategorii**
+## **PBI 4.2 - Lista elementów po wybraniu kategorii**
 
 **User story:**
 Jako administrator
@@ -219,7 +219,7 @@ aby wybrać właściwy do wygenerowania QR.
 
 ---
 
-## **PBI 4.3 – Generowanie kodu QR**
+## **PBI 4.3 - Generowanie kodu QR**
 
 **User story:**
 Jako administrator
@@ -235,7 +235,7 @@ aby móc go umieścić na tabliczce.
 
 ---
 
-## **PBI 4.4 – Karta do druku (nazwa + QR)**
+## **PBI 4.4 - Karta do druku (nazwa + QR)**
 
 **User story:**
 Jako użytkownik
@@ -256,7 +256,7 @@ aby użyć jej fizycznie.
 
 ---
 
-## **PBI 5.1 – Stworzenie komponentu mapy Leaflet**
+## **PBI 5.1 - Stworzenie komponentu mapy Leaflet**
 
 **User story:**
 Jako developer
@@ -272,7 +272,7 @@ aby używać go w wielu podstronach i na stronie głównej.
 
 ---
 
-## **PBI 5.2 – Dodanie obsługi markera**
+## **PBI 5.2 - Dodanie obsługi markera**
 
 **User story:**
 Jako developer
@@ -289,7 +289,7 @@ aby wskazywać lokalizacje osób i wydarzeń.
 
 ---
 
-## **PBI 5.3 – Filtracja elementów na mapie**
+## **PBI 5.3 - Filtracja elementów na mapie**
 
 **User story:**
 Jako użytkownik
