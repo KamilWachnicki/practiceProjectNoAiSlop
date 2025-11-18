@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="/src/app/people/style.css">
   <link rel="stylesheet" href="style.css">
   <script src="/src/app/login/adminstatus.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <script src="/src/lib/leaflet.js" defer></script>
 </head>
 
 <body>
@@ -33,8 +35,8 @@
       <a href="/src/app/events/index.html">Wydarzenia</a>
     </button>
     <button class="navButton eventsButton" title="Qr Template" id="qrAdminButton">
-        <img src="/src/icons/qrCode.svg" alt="qr code icon">
-        <a href="/src/app/templateGenerator/index.html">Qr Template</a>
+      <img src="/src/icons/qrCode.svg" alt="qr code icon">
+      <a href="/src/app/templateGenerator/index.html">Qr Template</a>
     </button>
   </nav>
 
@@ -53,7 +55,7 @@
           mechaniki klasycznej.
           W optyce odkrył, że światło białe składa się z mieszaniny barw oraz zbudował pierwszy praktyczny teleskop
           Jego dzieło „Philosophiæ Naturalis Principia Mathematica” (1687) jest jednym z najważniejszych pojedynczych
-          dzieł w historii nowożytnej nauki. 
+          dzieł w historii nowożytnej nauki.
           <br><br>
           W matematyce niezależnie od Gottfried Wilhelm Leibniz opracował rachunek różniczkowy i całkowy.
           Jego prace połączyły model matematyczny z fizyczną rzeczywistością, co zmieniło sposób, w jaki rozumiemy
@@ -68,13 +70,39 @@
 
     </section>
 
-    <div class="mapContainer">
-      <iframe
-        src="https://www.openstreetmap.org/export/embed.html?bbox=7.420%2C46.95%2C7.45%2C46.97&amp;layer=mapnik&amp;marker=46.96%2C7.43"
-        allowfullscreen loading="lazy">
-      </iframe>
-    </div>
+    <div class="mapContainer" id="map"></div>
   </main>
+  <script>
+    const name = "IsaacNewton"
+    async function read() {
+      try {
+        const res = await fetch("/src/data/people.json")
+        const data = await res.json()
+
+        let lat = 0;
+        let lon = 0;
+
+        data.forEach(element => {
+          if (`${element.Name}${element.Surname}` == name) {
+            lat = element.location.lat
+            lon = element.location.lon
+          }
+        });
+
+        const map = L.map('map').setView([lat, lon], 14);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+        }).addTo(map);
+
+        L.marker([lat, lon]).addTo(map);
+      }
+      catch (error) {
+        console.error(error)
+      }
+    }
+    read()
+  </script>
 </body>
 
 </html>
